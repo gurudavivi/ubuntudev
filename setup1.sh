@@ -9,6 +9,8 @@ sudo apt install -y git curl wget nano vim htop zsh
 sudo apt autoremove -y
 wait
 
+cd
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wait
 
@@ -53,9 +55,3 @@ wait
 
 npm install 
 wait
-
-
-
-
-# sudo apt install -y openssh-server ca-certificates software-properties-common
-# sudo apt upgrade -y

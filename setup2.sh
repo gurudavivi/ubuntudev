@@ -2,7 +2,6 @@
 
 clear
 
-cd
 pwd
 sleep 1
 
