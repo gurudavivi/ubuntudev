@@ -2,6 +2,8 @@
 
 clear
 
+
+
 apt install sudo
 
 sudo apt update -y
@@ -9,7 +11,9 @@ sudo apt install -y git curl wget nano vim htop zsh
 sudo apt autoremove -y
 wait
 
-cd
+cd 
+cd ubuntudev
+git pull
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wait
@@ -54,4 +58,10 @@ yarn -v
 wait
 
 npm install 
+wait
+
+sudo apt-get install fonts-powerline -y
+wait
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh) -y"
 wait
