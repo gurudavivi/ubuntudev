@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 clear
 
@@ -15,8 +15,9 @@ source ~/.zshrc
 source ~/.bashrc
 
 curl -L git.io/antigen > antigen.zsh
-
+wait
 source antigen.zsh
+wait
 
 antigen use oh-my-zsh
 
@@ -34,10 +35,10 @@ antigen apply
 
 
 
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-wait
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-wait
+# git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# wait
+# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+# wait
 
 pwd
 

@@ -11,6 +11,8 @@ sudo apt install -y git curl wget nano vim htop zsh
 sudo apt autoremove -y
 wait
 
+chsh -s $(which zsh)
+
 cd 
 cd ubuntudev
 
@@ -58,6 +60,7 @@ wait
 
 npm install 
 wait
+
 
 sudo apt-get install fonts-powerline -y
 wait
