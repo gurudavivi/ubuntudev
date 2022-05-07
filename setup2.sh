@@ -18,8 +18,10 @@ curl -L git.io/antigen > antigen.zsh
 wait
 source antigen.zsh
 wait
-
+antigen init 
+wait
 antigen use oh-my-zsh
+
 
 antigen bundle git
 antigen bundle heroku
