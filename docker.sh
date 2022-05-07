@@ -9,8 +9,13 @@ clear
 
 # docker run -it ubuntu
 
-# docker stop $(docker ps -a -q)
-# docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+# docker run -it ubuntu
 
 
 # git clone https://github.com/gurudavivi/ubuntudev.git && cd ubuntudev
+
+
+# apt update -y && apt install git sudo -y && git clone https://github.com/gurudavivi/ubuntudev.git && cd ubuntudev

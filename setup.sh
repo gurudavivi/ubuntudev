@@ -5,14 +5,32 @@ clear
 apt install sudo
 
 sudo apt update -y
-sudo apt upgrade -y
-sudo apt install -y git npm yarnpkg curl wget build-essential tar gzip nano net-tools htop
-sudo apt install -y vim zsh openssh-server ca-certificates software-properties-common
+# sudo apt upgrade -y
+sudo apt install -y git curl wget nano vim htop zsh
+# sudo apt install -y openssh-server ca-certificates software-properties-common
 sudo apt autoremove -y
-npm install -g yarn
-yarn global add  pnpm typescript prettier eslint tslib rimraf esbuild esbuild-register
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-bash 'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
+sleep 1
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# echo "export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm" >> ~/.zshrc
+
+bash
+
+nvm install --lts
+nvm install v16.15.0
+nvm use v16.15.0
+
+node -v
+npm -v
+yarn -v
+pnpm -v
+
+# yarn global add typescript prettier eslint tslib rimraf esbuild esbuild-register
+
+
