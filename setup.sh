@@ -22,9 +22,15 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 bash
 
+nvm install node
+nvm install-latest-npm
 nvm install --lts
+nvm install v10.24.1
+nvm install v12.22.12
+nvm install v14.19.2
 nvm install v16.15.0
 nvm use v16.15.0
+nvm default v16.15.0
 
 node -v
 npm -v
