@@ -26,7 +26,7 @@
         "experimentalDecorators": true,
     },
     "include": [
-        "lib",
+        "./src",
         "typings/types.ts",
         "typings/function.ts",
         "scripts/function.ts",

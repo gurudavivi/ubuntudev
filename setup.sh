@@ -29,7 +29,7 @@ nvm use v16.15.0
 node -v
 npm -v
 yarn -v
-pnpm -v
+# pnpm -v
 
 # yarn global add typescript prettier eslint tslib rimraf esbuild esbuild-register
 
