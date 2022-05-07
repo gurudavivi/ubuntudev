@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# pnpm run test:cov $1 "--collectCoverageFrom=$1"
+#     pnpm run test:cov $1 "--collectCoverageFrom=$1"
+# node -r esbuild-register $1   
+
+pnpm run test --coverage $1
