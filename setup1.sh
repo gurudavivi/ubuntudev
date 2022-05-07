@@ -54,22 +54,6 @@ wait
 npm install 
 wait
 
-cd
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-wait
-
-chsh -s $(which zsh)
-
-sudo apt-get install fonts-powerline -y
-
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-wait
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-wait
-
-pwd
-
 
 
 
