@@ -33,9 +33,14 @@ nvm default v16.15.0
 
 node -v
 npm -v
-yarn -v
-# pnpm -v
 
-# yarn global add typescript prettier eslint tslib rimraf esbuild esbuild-register
+npm install -g yarn pnpm
+
+pnpm -v
+yarn -v
+
+npm install -g prettier eslint typescript typesync ts-node jest ts-jest syncpack
+
+npm install 
 
 
