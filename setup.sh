@@ -9,7 +9,8 @@ sudo apt upgrade -y
 sudo apt install -y git npm yarnpkg curl wget build-essential tar gzip nano net-tools htop
 sudo apt install -y vim zsh openssh-server ca-certificates software-properties-common
 sudo apt autoremove -y
-npm install -g yarn pnpm typescript prettier eslint tslib rimraf esbuild esbuild-register
+npm install -g yarn
+yarn global add  pnpm typescript prettier eslint tslib rimraf esbuild esbuild-register
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 

@@ -13,4 +13,4 @@ clear
 # docker rm $(docker ps -a -q)
 
 
-# git clone git@github.com:gurudavivi/ubuntudev.git
+# git clone https://github.com/gurudavivi/ubuntudev.git && cd ubuntudev
